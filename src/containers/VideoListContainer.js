@@ -6,8 +6,6 @@ import changeVideoList from './../actions/videoList.js';
 
 const mapStateToProps = (state) => {
 
-    console.log(state);
-
     return {
         videos: state.videoList
         };

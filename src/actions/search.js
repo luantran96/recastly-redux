@@ -14,8 +14,7 @@ var handleVideoSearch = (q) => {
 	options.key = YOUTUBE_API_KEY;
 	
 	searchYouTube(options, data => {
-
-		// DOUBLE CHECK WHY THIS WORKS !
+    
 		dispatch(changeVideoList(data));
 		dispatch(changeVideo(data[0]));
 
