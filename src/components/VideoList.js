@@ -1,6 +1,8 @@
 import React from 'react';
 import VideoListEntry from './VideoListEntry.js';
-
+import { connect } from 'react-redux';
+import changeVideoList from '../actions/videoList.js';
+ 
 var VideoList = ({videos, handleVideoListEntryTitleClick}) => (
   <div className="video-list">
     {

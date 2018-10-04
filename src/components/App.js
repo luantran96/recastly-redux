@@ -7,7 +7,9 @@ import VideoList from './VideoList.js';
 import changeVideo from '../actions/currentVideo.js';
 import changeVideoList from '../actions/videoList.js';
 import exampleVideoData from '../data/exampleVideoData.js';
+import search from '../actions/search.js';
 import store from '../store/store.js';
+import { connect } from 'react-redux';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -62,3 +64,17 @@ export default class App extends React.Component {
     );
   }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        currentVideo: state.currentVideo,
+        videos: state.videos
+    };
+};
+
+function mapDispatchToProps(dispatch) {
+  return {// TO BE FILLED IN 
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

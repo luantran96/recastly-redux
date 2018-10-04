@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 var VideoListEntry = ({video, handleVideoListEntryTitleClick}) => (
   <div className="video-list-entry">

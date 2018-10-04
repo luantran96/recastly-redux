@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import handleVideoSearch from '../actions/search.js';
  
 class Search extends React.Component {
   constructor(props) {
