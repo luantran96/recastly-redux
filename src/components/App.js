@@ -65,16 +65,4 @@ export default class App extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
-    return {
-        currentVideo: state.currentVideo,
-        videos: state.videos
-    };
-};
 
-function mapDispatchToProps(dispatch) {
-  return {// TO BE FILLED IN 
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
